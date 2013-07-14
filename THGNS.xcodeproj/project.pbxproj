@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B311A18A17922DE500B961E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B311A18917922DE500B961E3 /* Cocoa.framework */; };
+		B311A19417922DE500B961E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B311A19217922DE500B961E3 /* InfoPlist.strings */; };
+		B311A19617922DE500B961E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B311A19517922DE500B961E3 /* main.m */; };
+		B311A19A17922DE500B961E3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B311A19817922DE500B961E3 /* Credits.rtf */; };
+		B311A19D17922DE500B961E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B311A19C17922DE500B961E3 /* AppDelegate.m */; };
+		B311A1A017922DE600B961E3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B311A19E17922DE600B961E3 /* MainMenu.xib */; };
+		B311A1A817922DE600B961E3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B311A1A717922DE600B961E3 /* SenTestingKit.framework */; };
+		B311A1A917922DE600B961E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B311A18917922DE500B961E3 /* Cocoa.framework */; };
+		B311A1B117922DE600B961E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B311A1AF17922DE600B961E3 /* InfoPlist.strings */; };
+		B311A1B417922DE600B961E3 /* THGNSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B311A1B317922DE600B961E3 /* THGNSTests.m */; };
+		B311A1BE17923DC200B961E3 /* thingsToday.scpt in Resources */ = {isa = PBXBuildFile; fileRef = B311A1BD17923DC200B961E3 /* thingsToday.scpt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B311A1AA17922DE600B961E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B311A17E17922DE500B961E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B311A18517922DE500B961E3;
+			remoteInfo = THGNS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B311A18617922DE500B961E3 /* THGNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THGNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B311A18917922DE500B961E3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B311A18C17922DE500B961E3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B311A18D17922DE500B961E3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B311A18E17922DE500B961E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B311A19117922DE500B961E3 /* THGNS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THGNS-Info.plist"; sourceTree = "<group>"; };
+		B311A19317922DE500B961E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B311A19517922DE500B961E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B311A19717922DE500B961E3 /* THGNS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "THGNS-Prefix.pch"; sourceTree = "<group>"; };
+		B311A19917922DE500B961E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B311A19B17922DE500B961E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B311A19C17922DE500B961E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B311A19F17922DE600B961E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B311A1A617922DE600B961E3 /* THGNSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THGNSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B311A1A717922DE600B961E3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B311A1AE17922DE600B961E3 /* THGNSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THGNSTests-Info.plist"; sourceTree = "<group>"; };
+		B311A1B017922DE600B961E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B311A1B217922DE600B961E3 /* THGNSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THGNSTests.h; sourceTree = "<group>"; };
+		B311A1B317922DE600B961E3 /* THGNSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THGNSTests.m; sourceTree = "<group>"; };
+		B311A1BD17923DC200B961E3 /* thingsToday.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = thingsToday.scpt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B311A18317922DE500B961E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B311A18A17922DE500B961E3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B311A1A217922DE600B961E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B311A1A817922DE600B961E3 /* SenTestingKit.framework in Frameworks */,
+				B311A1A917922DE600B961E3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B311A17D17922DE500B961E3 = {
+			isa = PBXGroup;
+			children = (
+				B311A1BD17923DC200B961E3 /* thingsToday.scpt */,
+				B311A18F17922DE500B961E3 /* THGNS */,
+				B311A1AC17922DE600B961E3 /* THGNSTests */,
+				B311A18817922DE500B961E3 /* Frameworks */,
+				B311A18717922DE500B961E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B311A18717922DE500B961E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B311A18617922DE500B961E3 /* THGNS.app */,
+				B311A1A617922DE600B961E3 /* THGNSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B311A18817922DE500B961E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B311A18917922DE500B961E3 /* Cocoa.framework */,
+				B311A1A717922DE600B961E3 /* SenTestingKit.framework */,
+				B311A18B17922DE500B961E3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B311A18B17922DE500B961E3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B311A18C17922DE500B961E3 /* AppKit.framework */,
+				B311A18D17922DE500B961E3 /* CoreData.framework */,
+				B311A18E17922DE500B961E3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B311A18F17922DE500B961E3 /* THGNS */ = {
+			isa = PBXGroup;
+			children = (
+				B311A19B17922DE500B961E3 /* AppDelegate.h */,
+				B311A19C17922DE500B961E3 /* AppDelegate.m */,
+				B311A19E17922DE600B961E3 /* MainMenu.xib */,
+				B311A19017922DE500B961E3 /* Supporting Files */,
+			);
+			path = THGNS;
+			sourceTree = "<group>";
+		};
+		B311A19017922DE500B961E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B311A19117922DE500B961E3 /* THGNS-Info.plist */,
+				B311A19217922DE500B961E3 /* InfoPlist.strings */,
+				B311A19517922DE500B961E3 /* main.m */,
+				B311A19717922DE500B961E3 /* THGNS-Prefix.pch */,
+				B311A19817922DE500B961E3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B311A1AC17922DE600B961E3 /* THGNSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B311A1B217922DE600B961E3 /* THGNSTests.h */,
+				B311A1B317922DE600B961E3 /* THGNSTests.m */,
+				B311A1AD17922DE600B961E3 /* Supporting Files */,
+			);
+			path = THGNSTests;
+			sourceTree = "<group>";
+		};
+		B311A1AD17922DE600B961E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B311A1AE17922DE600B961E3 /* THGNSTests-Info.plist */,
+				B311A1AF17922DE600B961E3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B311A18517922DE500B961E3 /* THGNS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B311A1B717922DE600B961E3 /* Build configuration list for PBXNativeTarget "THGNS" */;
+			buildPhases = (
+				B311A18217922DE500B961E3 /* Sources */,
+				B311A18317922DE500B961E3 /* Frameworks */,
+				B311A18417922DE500B961E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = THGNS;
+			productName = THGNS;
+			productReference = B311A18617922DE500B961E3 /* THGNS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B311A1A517922DE600B961E3 /* THGNSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B311A1BA17922DE600B961E3 /* Build configuration list for PBXNativeTarget "THGNSTests" */;
+			buildPhases = (
+				B311A1A117922DE600B961E3 /* Sources */,
+				B311A1A217922DE600B961E3 /* Frameworks */,
+				B311A1A317922DE600B961E3 /* Resources */,
+				B311A1A417922DE600B961E3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B311A1AB17922DE600B961E3 /* PBXTargetDependency */,
+			);
+			name = THGNSTests;
+			productName = THGNSTests;
+			productReference = B311A1A617922DE600B961E3 /* THGNSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B311A17E17922DE500B961E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Connor Montgomery";
+			};
+			buildConfigurationList = B311A18117922DE500B961E3 /* Build configuration list for PBXProject "THGNS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B311A17D17922DE500B961E3;
+			productRefGroup = B311A18717922DE500B961E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B311A18517922DE500B961E3 /* THGNS */,
+				B311A1A517922DE600B961E3 /* THGNSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B311A18417922DE500B961E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B311A19417922DE500B961E3 /* InfoPlist.strings in Resources */,
+				B311A19A17922DE500B961E3 /* Credits.rtf in Resources */,
+				B311A1A017922DE600B961E3 /* MainMenu.xib in Resources */,
+				B311A1BE17923DC200B961E3 /* thingsToday.scpt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B311A1A317922DE600B961E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B311A1B117922DE600B961E3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B311A1A417922DE600B961E3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B311A18217922DE500B961E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B311A19617922DE500B961E3 /* main.m in Sources */,
+				B311A19D17922DE500B961E3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B311A1A117922DE600B961E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B311A1B417922DE600B961E3 /* THGNSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B311A1AB17922DE600B961E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B311A18517922DE500B961E3 /* THGNS */;
+			targetProxy = B311A1AA17922DE600B961E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B311A19217922DE500B961E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B311A19317922DE500B961E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B311A19817922DE500B961E3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B311A19917922DE500B961E3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B311A19E17922DE600B961E3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B311A19F17922DE600B961E3 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B311A1AF17922DE600B961E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B311A1B017922DE600B961E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B311A1B517922DE600B961E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B311A1B617922DE600B961E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B311A1B817922DE600B961E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THGNS/THGNS-Prefix.pch";
+				INFOPLIST_FILE = "THGNS/THGNS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B311A1B917922DE600B961E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THGNS/THGNS-Prefix.pch";
+				INFOPLIST_FILE = "THGNS/THGNS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B311A1BB17922DE600B961E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/THGNS.app/Contents/MacOS/THGNS";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THGNS/THGNS-Prefix.pch";
+				INFOPLIST_FILE = "THGNSTests/THGNSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B311A1BC17922DE600B961E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/THGNS.app/Contents/MacOS/THGNS";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THGNS/THGNS-Prefix.pch";
+				INFOPLIST_FILE = "THGNSTests/THGNSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B311A18117922DE500B961E3 /* Build configuration list for PBXProject "THGNS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B311A1B517922DE600B961E3 /* Debug */,
+				B311A1B617922DE600B961E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B311A1B717922DE600B961E3 /* Build configuration list for PBXNativeTarget "THGNS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B311A1B817922DE600B961E3 /* Debug */,
+				B311A1B917922DE600B961E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B311A1BA17922DE600B961E3 /* Build configuration list for PBXNativeTarget "THGNSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B311A1BB17922DE600B961E3 /* Debug */,
+				B311A1BC17922DE600B961E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B311A17E17922DE500B961E3 /* Project object */;
+}

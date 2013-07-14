@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'THGNS' target in the 'THGNS' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
