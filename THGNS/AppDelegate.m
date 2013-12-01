@@ -55,10 +55,18 @@
         NSString *itemTitle = [[returnDescriptor descriptorAtIndex:x] stringValue];
         [things addObject:[self reasonablySizedVersionOfString:itemTitle]];
     }
-
+    
     for (int i = 0; i < [things count]; i++) {
         [self addItemToMenu:[things objectAtIndex:i]];
     }
+    
+    NSMenuItem *separatorItem = [NSMenuItem separatorItem];
+    [statusItemMenu insertItem:separatorItem atIndex:[things count]];
+    [statusItemMenu insertItemWithTitle:@"Quit" action:@selector(onQuitClick:) keyEquivalent:@"Q" atIndex:[things count] + 1];
+}
+
+- (void)onQuitClick:(id)sender{
+    [[NSApplication sharedApplication] terminate:self];
 }
 
 - (void)checkItemAtIndex: (NSInteger*) index{

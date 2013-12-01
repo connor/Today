@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CD77DE73-29E1-4094-97F1-E6695DDCB006</string>
+	<key>IDESourceControlProjectName</key>
+	<string>THGNS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BA9CF763-EB78-4A95-BBE2-0A53836E6616</key>
+		<string>ssh://github.com/connor/THNGS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>THGNS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BA9CF763-EB78-4A95-BBE2-0A53836E6616</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/connor/THNGS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BA9CF763-EB78-4A95-BBE2-0A53836E6616</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BA9CF763-EB78-4A95-BBE2-0A53836E6616</string>
+			<key>IDESourceControlWCCName</key>
+			<string>THGNS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

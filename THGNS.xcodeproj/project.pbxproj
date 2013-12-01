@@ -456,6 +456,7 @@
 				B311A1B917922DE600B961E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B311A1BA17922DE600B961E3 /* Build configuration list for PBXNativeTarget "THGNSTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +465,7 @@
 				B311A1BC17922DE600B961E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
