@@ -8,11 +8,16 @@
 
 #import "AppDelegate.h"
 
+static NSString * const TITLE_KEY = @"title";
+static NSString * const STATUS_KEY = @"status";
+static NSString * const COMPLETED_SIGNATURE = @"tdio";
+
 @implementation AppDelegate
 
 @synthesize statusItemMenu;
 @synthesize things;
 @synthesize statusItem;
+
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -36,7 +41,7 @@
 - (void)setRandomStatusTitle{
     NSUInteger randomIndex = arc4random() % [things count];
     NSDictionary *thing = [things objectAtIndex:randomIndex];
-    NSString *title = [self reasonablySizedVersionOfString:[thing objectForKey:@"title"]];
+    NSString *title = [self reasonablySizedVersionOfString:[thing objectForKey:TITLE_KEY]];
     [self setStatusItemTitle:title];
 }
 
@@ -64,7 +69,7 @@
         NSString *status = [[returnDescriptor descriptorAtIndex:x + 1] stringValue];
         NSString *id = [[returnDescriptor descriptorAtIndex:x + 2] stringValue];
         
-        NSDictionary *localThing = @{@"title": title, @"status": status, @"id": id};
+        NSDictionary *localThing = @{TITLE_KEY: title, STATUS_KEY: status, @"id": id};
         [things addObject:localThing];
         
     }
@@ -77,7 +82,7 @@
     
     NSMenuItem *separatorItem = [NSMenuItem separatorItem];
     [statusItemMenu insertItem:separatorItem atIndex:[things count]];
-    [statusItemMenu insertItemWithTitle:@"Quit" action:@selector(onQuitClick:) keyEquivalent:@"Q" atIndex:[things count] + 1];
+    [statusItemMenu insertItemWithTitle:@"Quit" action:@selector(onQuitClick:) keyEquivalent:@"q" atIndex:[things count] + 1];
 }
 
 - (void)onQuitClick:(id)sender{
@@ -85,14 +90,14 @@
 }
 
 - (void)addItemToMenu:(NSDictionary*) thing{
-    NSString *title = [thing objectForKey:@"title"];
-    NSString *status = [thing objectForKey:@"status"];
+    NSString *title = [thing objectForKey:TITLE_KEY];
+    NSString *status = [thing objectForKey:STATUS_KEY];
  
     NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:[self reasonablySizedVersionOfString:title] action:@selector(onStatusMenuItemClick:) keyEquivalent:@""];
 
     [statusItemMenu setAutoenablesItems:NO];
     
-    if (![status isEqual: @"tdio"]) {
+    if (![status isEqual: COMPLETED_SIGNATURE]) {
         [menuItem setEnabled:NO];
         [menuItem setState:1];
     }
