@@ -22,8 +22,15 @@
 	statusItem.highlightMode = YES;
     [self fetchAndSetThings];
     [self setRandomStatusTitle];
-    [NSTimer scheduledTimerWithTimeInterval:300.0 target:self selector:@selector(setRandomStatusTitle) userInfo:nil repeats:YES];
+    [self resetStatusTitleTimer];
     [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(fetchAndSetThings) userInfo:nil repeats:YES];
+}
+
+- (void)resetStatusTitleTimer {
+    if (self.statusTitleTimer != nil) {
+        [self.statusTitleTimer invalidate];
+    }
+    self.statusTitleTimer = [NSTimer scheduledTimerWithTimeInterval:300.0 target:self selector:@selector(setRandomStatusTitle) userInfo:nil repeats:YES];
 }
 
 - (void)setRandomStatusTitle{
@@ -95,7 +102,9 @@
 }
 
 - (void)onStatusMenuItemClick: sender{
-    
+    NSString *title = [sender title];
+    [self setStatusItemTitle:title];
+    [self resetStatusTitleTimer];
 }
 
 @end

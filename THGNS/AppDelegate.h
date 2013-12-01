@@ -13,5 +13,6 @@
 @property (nonatomic) NSStatusItem *statusItem;
 @property (nonatomic) NSMutableArray *things;
 @property (nonatomic) IBOutlet NSMenu *statusItemMenu;
+@property (weak, nonatomic) NSTimer *statusTitleTimer;
 
 @end
