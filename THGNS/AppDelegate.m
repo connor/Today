@@ -94,6 +94,7 @@
     
     if (![status isEqual: @"tdio"]) {
         [menuItem setEnabled:NO];
+        [menuItem setState:1];
     }
     
     [statusItemMenu insertItem:menuItem atIndex:0];
