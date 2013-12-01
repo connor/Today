@@ -41,8 +41,34 @@ static NSString * const COMPLETED_SIGNATURE = @"tdio";
 - (void)setRandomStatusTitle{
     NSUInteger randomIndex = arc4random() % [things count];
     NSDictionary *thing = [things objectAtIndex:randomIndex];
+    BOOL isCompletedAlready = [self isComplete:thing];
     NSString *title = [self reasonablySizedVersionOfString:[thing objectForKey:TITLE_KEY]];
+    
+    if (isCompletedAlready) {
+        if ([self hasRemainingThings]) {
+            [self setRandomStatusTitle];
+            return;
+        } else {
+            title = [NSString stringWithFormat:@"✓ — %@", title];
+        }
+    }
+    
     [self setStatusItemTitle:title];
+}
+
+- (BOOL)hasRemainingThings {
+    BOOL hasRemainingThings = NO;
+    for (int i = 0; i < [things count]; i++) {
+        if (![self isComplete:[things objectAtIndex:i]]) {
+            hasRemainingThings = YES;
+        }
+    }
+    return hasRemainingThings;
+}
+
+- (BOOL)isComplete:(NSDictionary *)thing {
+    NSString *status = [thing objectForKey:STATUS_KEY];
+    return (![status isEqual:COMPLETED_SIGNATURE]);
 }
 
 - (void)reset {
