@@ -35,8 +35,9 @@
 
 - (void)setRandomStatusTitle{
     NSUInteger randomIndex = arc4random() % [things count];
-    NSString *newStatusTitle = [things objectAtIndex:randomIndex];
-    [self setStatusItemTitle:newStatusTitle];
+    NSDictionary *thing = [things objectAtIndex:randomIndex];
+    NSString *title = [self reasonablySizedVersionOfString:[thing objectForKey:@"title"]];
+    [self setStatusItemTitle:title];
 }
 
 - (void)reset {
@@ -58,13 +59,20 @@
   
     [self reset];
     
-    for (NSInteger x = 1; x < numberOfItems + 1; x++) {
-        NSString *itemTitle = [[returnDescriptor descriptorAtIndex:x] stringValue];
-        [things addObject:[self reasonablySizedVersionOfString:itemTitle]];
+    for (NSInteger x = 1; x < numberOfItems + 1; x += 3) {
+        NSString *title = [[returnDescriptor descriptorAtIndex:x] stringValue];
+        NSString *status = [[returnDescriptor descriptorAtIndex:x + 1] stringValue];
+        NSString *id = [[returnDescriptor descriptorAtIndex:x + 2] stringValue];
+        
+        NSDictionary *localThing = @{@"title": title, @"status": status, @"id": id};
+        [things addObject:localThing];
+        
     }
     
-    for (int i = 0; i < [things count]; i++) {
-        [self addItemToMenu:[things objectAtIndex:i]];
+    NSArray* reversedThings = [[things reverseObjectEnumerator] allObjects];
+    
+    for (int i = 0; i < [reversedThings count]; i++) {
+        [self addItemToMenu:[reversedThings objectAtIndex:i]];
     }
     
     NSMenuItem *separatorItem = [NSMenuItem separatorItem];
@@ -76,13 +84,20 @@
     [[NSApplication sharedApplication] terminate:self];
 }
 
-- (void)checkItemAtIndex: (NSInteger*) index{
-    [[statusItemMenu itemAtIndex:*index] setState:YES];
-    [[statusItemMenu itemAtIndex:*index] setEnabled:NO];
-}
+- (void)addItemToMenu:(NSDictionary*) thing{
+    NSString *title = [thing objectForKey:@"title"];
+    NSString *status = [thing objectForKey:@"status"];
+ 
+    NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:[self reasonablySizedVersionOfString:title] action:@selector(onStatusMenuItemClick:) keyEquivalent:@""];
 
-- (void)addItemToMenu:(NSString*) title{
-    [statusItemMenu insertItemWithTitle:[self reasonablySizedVersionOfString:title] action:@selector(onStatusMenuItemClick:) keyEquivalent:@"" atIndex:0];
+    [statusItemMenu setAutoenablesItems:NO];
+    
+    if (![status isEqual: @"tdio"]) {
+        [menuItem setEnabled:NO];
+    }
+    
+    [statusItemMenu insertItem:menuItem atIndex:0];
+
 }
 
 - (NSString *)reasonablySizedVersionOfString:(NSString *)originalString {
