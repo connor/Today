@@ -18,6 +18,7 @@
 		B311A1B117922DE600B961E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B311A1AF17922DE600B961E3 /* InfoPlist.strings */; };
 		B311A1B417922DE600B961E3 /* THGNSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B311A1B317922DE600B961E3 /* THGNSTests.m */; };
 		B311A1BE17923DC200B961E3 /* thingsToday.scpt in Resources */ = {isa = PBXBuildFile; fileRef = B311A1BD17923DC200B961E3 /* thingsToday.scpt */; };
+		B3B46B012396E2B100605AB4 /* thingsToday.scpt in Sources */ = {isa = PBXBuildFile; fileRef = B311A1BD17923DC200B961E3 /* thingsToday.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B311A18617922DE500B961E3 /* THGNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THGNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B311A18617922DE500B961E3 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B311A18917922DE500B961E3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B311A18C17922DE500B961E3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B311A18D17922DE500B961E3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B311A18E17922DE500B961E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B311A19117922DE500B961E3 /* THGNS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THGNS-Info.plist"; sourceTree = "<group>"; };
+		B311A19117922DE500B961E3 /* Today-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Today-Info.plist"; sourceTree = "<group>"; };
 		B311A19317922DE500B961E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B311A19517922DE500B961E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B311A19717922DE500B961E3 /* THGNS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "THGNS-Prefix.pch"; sourceTree = "<group>"; };
@@ -44,13 +45,14 @@
 		B311A19B17922DE500B961E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B311A19C17922DE500B961E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B311A19F17922DE600B961E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B311A1A617922DE600B961E3 /* THGNSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THGNSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B311A1A617922DE600B961E3 /* TodayTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B311A1A717922DE600B961E3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B311A1AE17922DE600B961E3 /* THGNSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THGNSTests-Info.plist"; sourceTree = "<group>"; };
+		B311A1AE17922DE600B961E3 /* TodayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodayTests-Info.plist"; sourceTree = "<group>"; };
 		B311A1B017922DE600B961E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B311A1B217922DE600B961E3 /* THGNSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THGNSTests.h; sourceTree = "<group>"; };
 		B311A1B317922DE600B961E3 /* THGNSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THGNSTests.m; sourceTree = "<group>"; };
 		B311A1BD17923DC200B961E3 /* thingsToday.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = thingsToday.scpt; sourceTree = "<group>"; };
+		B3B46B022396E38E00605AB4 /* Today-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Today-Prefix.pch"; path = "Today/Today-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,9 @@
 		B311A17D17922DE500B961E3 = {
 			isa = PBXGroup;
 			children = (
-				B311A1BD17923DC200B961E3 /* thingsToday.scpt */,
-				B311A18F17922DE500B961E3 /* THGNS */,
-				B311A1AC17922DE600B961E3 /* THGNSTests */,
+				B3B46B022396E38E00605AB4 /* Today-Prefix.pch */,
+				B311A18F17922DE500B961E3 /* Today */,
+				B311A1AC17922DE600B961E3 /* TodayTests */,
 				B311A18817922DE500B961E3 /* Frameworks */,
 				B311A18717922DE500B961E3 /* Products */,
 			);
@@ -88,8 +90,8 @@
 		B311A18717922DE500B961E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B311A18617922DE500B961E3 /* THGNS.app */,
-				B311A1A617922DE600B961E3 /* THGNSTests.octest */,
+				B311A18617922DE500B961E3 /* Today.app */,
+				B311A1A617922DE600B961E3 /* TodayTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,21 +116,22 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		B311A18F17922DE500B961E3 /* THGNS */ = {
+		B311A18F17922DE500B961E3 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				B311A1BD17923DC200B961E3 /* thingsToday.scpt */,
 				B311A19B17922DE500B961E3 /* AppDelegate.h */,
 				B311A19C17922DE500B961E3 /* AppDelegate.m */,
 				B311A19E17922DE600B961E3 /* MainMenu.xib */,
 				B311A19017922DE500B961E3 /* Supporting Files */,
 			);
-			path = THGNS;
+			path = Today;
 			sourceTree = "<group>";
 		};
 		B311A19017922DE500B961E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B311A19117922DE500B961E3 /* THGNS-Info.plist */,
+				B311A19117922DE500B961E3 /* Today-Info.plist */,
 				B311A19217922DE500B961E3 /* InfoPlist.strings */,
 				B311A19517922DE500B961E3 /* main.m */,
 				B311A19717922DE500B961E3 /* THGNS-Prefix.pch */,
@@ -137,20 +140,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B311A1AC17922DE600B961E3 /* THGNSTests */ = {
+		B311A1AC17922DE600B961E3 /* TodayTests */ = {
 			isa = PBXGroup;
 			children = (
 				B311A1B217922DE600B961E3 /* THGNSTests.h */,
 				B311A1B317922DE600B961E3 /* THGNSTests.m */,
 				B311A1AD17922DE600B961E3 /* Supporting Files */,
 			);
-			path = THGNSTests;
+			path = TodayTests;
 			sourceTree = "<group>";
 		};
 		B311A1AD17922DE600B961E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B311A1AE17922DE600B961E3 /* THGNSTests-Info.plist */,
+				B311A1AE17922DE600B961E3 /* TodayTests-Info.plist */,
 				B311A1AF17922DE600B961E3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -159,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B311A18517922DE500B961E3 /* THGNS */ = {
+		B311A18517922DE500B961E3 /* Today */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B311A1B717922DE600B961E3 /* Build configuration list for PBXNativeTarget "THGNS" */;
+			buildConfigurationList = B311A1B717922DE600B961E3 /* Build configuration list for PBXNativeTarget "Today" */;
 			buildPhases = (
 				B311A18217922DE500B961E3 /* Sources */,
 				B311A18317922DE500B961E3 /* Frameworks */,
@@ -171,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = THGNS;
+			name = Today;
 			productName = THGNS;
-			productReference = B311A18617922DE500B961E3 /* THGNS.app */;
+			productReference = B311A18617922DE500B961E3 /* Today.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B311A1A517922DE600B961E3 /* THGNSTests */ = {
+		B311A1A517922DE600B961E3 /* TodayTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B311A1BA17922DE600B961E3 /* Build configuration list for PBXNativeTarget "THGNSTests" */;
+			buildConfigurationList = B311A1BA17922DE600B961E3 /* Build configuration list for PBXNativeTarget "TodayTests" */;
 			buildPhases = (
 				B311A1A117922DE600B961E3 /* Sources */,
 				B311A1A217922DE600B961E3 /* Frameworks */,
@@ -190,9 +193,9 @@
 			dependencies = (
 				B311A1AB17922DE600B961E3 /* PBXTargetDependency */,
 			);
-			name = THGNSTests;
+			name = TodayTests;
 			productName = THGNSTests;
-			productReference = B311A1A617922DE600B961E3 /* THGNSTests.octest */;
+			productReference = B311A1A617922DE600B961E3 /* TodayTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -204,11 +207,12 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Connor Montgomery";
 			};
-			buildConfigurationList = B311A18117922DE500B961E3 /* Build configuration list for PBXProject "THGNS" */;
+			buildConfigurationList = B311A18117922DE500B961E3 /* Build configuration list for PBXProject "Today" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = B311A17D17922DE500B961E3;
@@ -216,8 +220,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B311A18517922DE500B961E3 /* THGNS */,
-				B311A1A517922DE600B961E3 /* THGNSTests */,
+				B311A18517922DE500B961E3 /* Today */,
+				B311A1A517922DE600B961E3 /* TodayTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B46B012396E2B100605AB4 /* thingsToday.scpt in Sources */,
 				B311A19617922DE500B961E3 /* main.m in Sources */,
 				B311A19D17922DE500B961E3 /* AppDelegate.m in Sources */,
 			);
@@ -283,7 +288,7 @@
 /* Begin PBXTargetDependency section */
 		B311A1AB17922DE600B961E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B311A18517922DE500B961E3 /* THGNS */;
+			target = B311A18517922DE500B961E3 /* Today */;
 			targetProxy = B311A1AA17922DE600B961E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -388,8 +393,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "THGNS/THGNS-Prefix.pch";
-				INFOPLIST_FILE = "THGNS/THGNS-Info.plist";
+				GCC_PREFIX_HEADER = "Today/Today-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Today/Today-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,8 +405,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "THGNS/THGNS-Prefix.pch";
-				INFOPLIST_FILE = "THGNS/THGNS-Info.plist";
+				GCC_PREFIX_HEADER = "Today/Today-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Today/Today-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -415,7 +420,7 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "THGNS/THGNS-Prefix.pch";
-				INFOPLIST_FILE = "THGNSTests/THGNSTests-Info.plist";
+				INFOPLIST_FILE = "THGNSTests/TodayTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -430,7 +435,7 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "THGNS/THGNS-Prefix.pch";
-				INFOPLIST_FILE = "THGNSTests/THGNSTests-Info.plist";
+				INFOPLIST_FILE = "THGNSTests/TodayTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -440,7 +445,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B311A18117922DE500B961E3 /* Build configuration list for PBXProject "THGNS" */ = {
+		B311A18117922DE500B961E3 /* Build configuration list for PBXProject "Today" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B311A1B517922DE600B961E3 /* Debug */,
@@ -449,7 +454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B311A1B717922DE600B961E3 /* Build configuration list for PBXNativeTarget "THGNS" */ = {
+		B311A1B717922DE600B961E3 /* Build configuration list for PBXNativeTarget "Today" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B311A1B817922DE600B961E3 /* Debug */,
@@ -458,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B311A1BA17922DE600B961E3 /* Build configuration list for PBXNativeTarget "THGNSTests" */ = {
+		B311A1BA17922DE600B961E3 /* Build configuration list for PBXNativeTarget "TodayTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B311A1BB17922DE600B961E3 /* Debug */,

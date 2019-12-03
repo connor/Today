@@ -1,14 +1,14 @@
 //
-//  THGNSTests.m
-//  THGNSTests
+//  TodayTests.m
+//  TodayTests
 //
 //  Created by Connor Montgomery on 7/13/13.
 //  Copyright (c) 2013 Connor Montgomery. All rights reserved.
 //
 
-#import "THGNSTests.h"
+#import "TodayTests.h"
 
-@implementation THGNSTests
+@implementation TodayTests
 
 - (void)setUp
 {
@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in THGNSTests");
+    STFail(@"Unit tests are not implemented yet in TodayTests");
 }
 
 @end
